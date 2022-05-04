@@ -1,5 +1,7 @@
+import Cycles "mo:base/ExperimentalCycles";
+
 actor {
-  public func greet(name : Text) : async Text {
-    return "Hello, " # name # "!";
+  public query func cycleBalance() : async Nat{
+    return Cycles.balance();
   };
 };

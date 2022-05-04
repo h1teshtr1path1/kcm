@@ -9,11 +9,11 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   button.setAttribute("disabled", true);
 
   // Interact with foo actor, calling the greet method
-  const greeting = await demoIC.greet(name);
+  const cycleBalance = await demoIC.cycleBalance();
 
   button.removeAttribute("disabled");
 
-  document.getElementById("greeting").innerText = greeting;
+  document.getElementById("greeting").innerText = cycleBalance;
 
   return false;
 });
